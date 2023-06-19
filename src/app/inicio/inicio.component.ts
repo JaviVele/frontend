@@ -98,7 +98,8 @@ export class InicioComponent implements OnInit {
   
     this.backandService.registrarPublicacion(publicacion).subscribe(
       response => {
-        this.listarPublicaciones(this.id);
+        // this.listarPublicaciones(this.id);
+        this.recargarPagina();
       },
       error => {
         console.error(error);
